@@ -1,24 +1,51 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Assessments from './components/Assessments/Assessments';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Home from './components/Home/Home';
+import Masterplan from './components/Masterplan/Masterplan';
+import MillsapElementary from './components/Millsap Elementary/MillsapElementary';
+import MillsapMiddleSchool from './components/MillsapMiddleSchool/MillsapMiddleSchool';
+import ScrollToTop from './utilities/ScrollToTop';
 
 function App() {
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='header'>
+      <Header />
+      </div>
+      
+        <main className='main'>
+          <ScrollToTop>
+            <Route path="/">
+              <Redirect to="/home" />
+            </Route>
+            <Route path='/home'>
+              <Home />
+            </Route>
+            <Route path='/masterplan'>
+              <Masterplan />
+            </Route>
+            <Route path='/assessments'>
+              <Assessments />
+            </Route>
+            <Route path='/millsapelementary'>
+              <MillsapElementary />
+            </Route>
+            <Route path='/millsapmiddle'>
+              <MillsapMiddleSchool />
+            </Route>
+          </ScrollToTop>
+        </main>
+      <div className='footer'>
+          <Footer />
+      </div>
+    </Router>
   );
 }
 

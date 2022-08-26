@@ -1,0 +1,241 @@
+.masterplan {
+    animation: fadeIn 2s;
+    
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.master-planning-overview {
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    color: #3d3338;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0%;
+}
+
+.master-planning-overview h2 {
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+
+.master-planning-overview h3 {
+    font-weight: 300;
+    font-size: 1.7rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.master-planning-overview p {
+    text-align: center;
+    margin: 0 15% 0 15%;
+    font-size: 1.2rem;
+}
+
+.LRFMP-process {
+    display: flex;
+    margin: 5% 15% 0 15%;
+}
+
+.shield {
+    margin: 2% 5% 5% 5%;
+}
+
+.LRFMP-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.LRFMP-description h4 {
+    font-size: 1.5rem;
+    color: #3d3338;
+}
+
+.LRFMP-list li {
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    padding-top: 1%;
+    color: #3d3338;
+}
+
+.LRFMP-plan-process {
+    color: #3d3338;
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15% 0 15%;
+}
+
+.LRFMP-plan-process h2 {
+    font-size: 2.2rem;
+
+}
+
+.LRFMP-plan-process p {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.master-plan-building {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.facility-needs-assessment {
+    margin-top: 5%;
+    color: #3d3338;
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.facility-needs-assessment h2 {
+    font-size: 2.2rem;
+}
+
+.facility-needs-assessment p {
+    font-size: 1.2rem;
+    margin: 0 15% 0 15%;
+}
+
+.assessment-dropdown {
+    display: block;
+    margin: 0 15% 0 15%;
+}
+
+.dropdown-item {
+    display: none;
+    position: absolute;
+}
+
+.assessment-dropdown:hover .dropdown-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #3d3338;
+}
+
+.assessment-dropdown p:hover {
+    cursor: pointer;
+}
+
+.civil,
+.building-envelope,
+.architecture,
+.mechanical,
+.electrical,
+.plumbing,
+.technology,
+.safety {
+    border-style: solid; 
+    background-color: #f0e3e9;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    padding: 1% 1% 1% 1%;
+    border-color: #3d3338;
+    border-radius: 5px;
+}
+
+.civil:hover,
+.building-envelope:hover,
+.architecture:hover,
+.mechanical:hover,
+.electrical:hover,
+.plumbing:hover,
+.technology:hover,
+.safety:hover {
+    background-color: #d3bbc7;
+    
+}
+
+.assessment-dropdown p {
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.assessment-dropdown li {
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    margin-left: 2%;
+}
+
+.drop-container {
+    position: relative;
+    z-index: -1;
+    animation: slidedown 1.2s;
+    overflow: auto;
+}
+/* 
+@keyframes slidein {
+    from {
+        transform: translateY(-100%);
+      }
+      to {
+        transform: translateY(0%);
+      }
+    } */
+
+@keyframes slidein {
+    from {
+        margin-right: 100%;
+        
+      }
+    
+      to {
+        margin-right: 0%;
+        
+      }
+    }
+
+@keyframes slidemenu {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 10rem;
+    }
+  }
+
+  @keyframes slidedown{
+    from {
+    
+      position: relative;
+      top: 0px;  
+      transform: translateY(-75%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+    
+  
+  @keyframes slideup{
+    from {
+      transform: translateY(0);
+      opacity: 1;
+      position: relative;
+      top: 0px;  
+      transform: translateY(-75%);
+      opacity: 0;
+    }
+    to {
+        position: relative;
+        top: 0px;  
+        transform: translateY(-75%);
+        opacity: 0;
+    }
+  }
