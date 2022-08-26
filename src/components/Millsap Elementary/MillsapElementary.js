@@ -25,7 +25,7 @@ export default function MillsapElementary() {
             </div>
             <div className="pic-container">
                 <div className="school-pic">
-                    <img src={elementary} />
+                    <img alt='' src={elementary} />
                 </div>
             </div>
             </div>

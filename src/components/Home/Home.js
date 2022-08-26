@@ -1,7 +1,7 @@
 import React from 'react';  
 import { NavLink } from 'react-router-dom';
 import './Home.css'
-import masterplanbuilding from '../../resources/images/masterplanbuilding.jpg'
+
    
 function Home (){ 
     return (

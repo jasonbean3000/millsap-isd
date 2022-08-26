@@ -1,5 +1,5 @@
 import React from "react";
-import { useState, useEffect } from "react";
+
 import { NavLink } from "react-router-dom";
 
 import logo from '../../resources/images/logo.png';
@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <div id='header-scroll' className='header'>
-            <img src={logo} />
+            <img alt='' src={logo} />
             <NavLink activeClassName='active-nav-link' className='navlink' to="/home">HOME</NavLink>
             <NavLink activeClassName='active-nav-link' className='navlink' to="/masterplan">MASTER PLAN</NavLink>
                 <div className="school-dropdown">

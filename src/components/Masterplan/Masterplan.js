@@ -4,7 +4,7 @@ import './Masterplan.css'
 import shield from '../../resources/images/shield.webp'
 import masterplanprocess from '../../resources/images/masterplanprocess.jpg'
 import masterplanbuilding from '../../resources/images/masterplanbuilding.jpg'
-import ScrollToTop from "../../utilities/ScrollToTop";
+
 
 export default function Masterplan() {
     const [isActive, setIsActive] = useState(true);
@@ -118,7 +118,7 @@ export default function Masterplan() {
                 <p>Twin Rivers Unified School District utilizes the Long Range Facility Master Plan (LRFMP) process to routinely assess each District facility in order to identify immediate and future needs that impact the learning environments at each campus and develop a plan to address them. The District LRFMP was originally developed in 2015. It has been routinely refreshed to reflect changes in external conditions, such as construction costs and funding, as well as District completion of projects. The master plan is a “living document” and is used as a continuous roadmap for long-term stewardship of District facilities.</p>
             </div>
             <div className="LRFMP-process">
-                <img className="shield" src={shield} />
+                <img className="shield" alt="" src={shield} />
                 <div className="LRFMP-description">
                     <h4>THE LRFMP IS:</h4>
                     <ul className="LRFMP-list">
@@ -133,12 +133,12 @@ export default function Masterplan() {
             <div className="LRFMP-plan-process">
                 <h2>THE MASTER PLAN PROCESS</h2>
                 <p>The development of a Long-Range Facility Master Plan is a multi-phase initiative which includes a review of documentation and records related to existing campuses as well as historical construction and modernization efforts to date; a physical assessment of existing conditions; current space utilization; capacity, enrollment history, and future projections; a thorough understanding of educational programs and program-related needs from a District, site and community perspective; as well as current and future grade-specific and site-specific needs. </p>
-                <img src={masterplanprocess} />
+                <img alt='' src={masterplanprocess} />
             </div>
             <div className="facility-needs-assessment">
                 <h2>FACILITY NEEDS ASSESSMENTS</h2>
                 <p>Facility condition assessments were conducted by a multi-disciplinary team of architects, engineers and consultants. The physical site walks encompassed a building-by-building system examination of existing conditions on the school site. This includes interiors, exteriors, mechanical, electrical, plumbing, technology and site / civil elements of each campus. </p>
-                <img className='master-plan-building' src={masterplanbuilding} />
+                <img alt="" className='master-plan-building' src={masterplanbuilding} />
             </div>
             
             <div className="assessment-dropdown">

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Redirect, Route } from 'react-router-dom';
 import './App.css';
 import Assessments from './components/Assessments/Assessments';
 import Footer from './components/Footer/Footer';
