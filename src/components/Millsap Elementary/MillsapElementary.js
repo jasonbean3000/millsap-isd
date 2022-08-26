@@ -20,7 +20,7 @@ export default function MillsapElementary() {
                     <p>Building Area: 39,722 SF</p>
                     <p>Site Acreage: 10</p>
                     <p>Capacity: 700</p>
-                    <p>Enrollment: 403</p>
+                    <p>Enrollment: 404</p>
                 </div>
             </div>
             <div className="pic-container">
