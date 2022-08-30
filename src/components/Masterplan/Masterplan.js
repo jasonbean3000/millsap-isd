@@ -1,113 +1,112 @@
 import React from "react";
 import { useState } from "react";
-import './Masterplan.css'
-import shield from '../../resources/images/shield.webp'
-import masterplanprocess from '../../resources/images/masterplanprocess.jpg'
-import masterplanbuilding from '../../resources/images/masterplanbuilding.jpg'
+import './Masterplan.css';
+import { Collapse } from "react-collapse";
+import { NavLink } from 'react-router-dom';
+import shield from '../../resources/images/shield.webp';
+import masterplanprocess from '../../resources/images/masterplanprocess.jpg';
+import masterplanbuilding from '../../resources/images/masterplanbuilding.jpg';
+
 
 
 export default function Masterplan() {
-    const [isActive, setIsActive] = useState(true);
-    const [isBuildingActive, setIsBuildingActive] = useState(true);
-    const [isArchitectureActive, setIsArchitectureActive] = useState(true);
-    const [isMechanicalActive, setIsMechanicalActive] = useState(true);
-    const [isElectricalActive, setIsElectricalActive] = useState(true);
-    const [isPlumbingActive, setIsPlumbingActive] = useState(true);
-    const [isTechnologyActive, setIsTechnologyActive] = useState(true);
-    const [isSafetyActive, setIsSafetyActive] = useState(true);
 
-    const handleClick = () => {
-        setIsActive(current => !current);
-        setIsBuildingActive(true);
-        setIsArchitectureActive(true);
-        setIsMechanicalActive(true);
-        setIsElectricalActive(true);
-        setIsPlumbingActive(true);
-        setIsTechnologyActive(true);
-        setIsSafetyActive(true);
-    };
+    const [isCivilOpened, setIsCivilOpened] = useState(false);
+    const [isBuildingOpened, setIsBuildingOpened] = useState(false);
+    const [isArchitectureOpened, setIsArchitectureOpened] = useState(false);
+    const [isMechanicalOpened, setIsMechanicalOpened] = useState(false);
+    const [isElectricalOpened, setIsElectricalOpened] = useState(false);
+    const [isPlumbingOpened, setIsPlumbingOpened] = useState(false);
+    const [isTechnologyOpened, setIsTechnologyOpened] = useState(false);
+    const [isSafetyOpened, setIsSafetyOpened] = useState(false);
+    
+    const handleCivilClick = () => {
+        setIsCivilOpened(current => !current);
+        setIsBuildingOpened(false);
+        setIsArchitectureOpened(false);
+        setIsMechanicalOpened(false);
+        setIsElectricalOpened(false);
+        setIsPlumbingOpened(false);
+        setIsTechnologyOpened(false);
+        setIsSafetyOpened(false);
+    }
 
     const handleBuildingClick = () => {
-        setIsBuildingActive(current => !current);
-        setIsActive(true);
-        setIsArchitectureActive(true);
-        setIsMechanicalActive(true);
-        setIsElectricalActive(true);
-        setIsPlumbingActive(true);
-        setIsTechnologyActive(true);
-        setIsSafetyActive(true);
+        setIsBuildingOpened(current => !current);
+        setIsCivilOpened(false);
+        setIsArchitectureOpened(false);
+        setIsMechanicalOpened(false);
+        setIsElectricalOpened(false);
+        setIsPlumbingOpened(false);
+        setIsTechnologyOpened(false);
+        setIsSafetyOpened(false);
     };
 
     const handleArchitectureClick = () => {
-        setIsArchitectureActive(current => !current);
-        setIsBuildingActive(true);
-        setIsActive(true);
-        setIsMechanicalActive(true);
-        setIsElectricalActive(true);
-        setIsPlumbingActive(true);
-        setIsTechnologyActive(true);
-        setIsSafetyActive(true);
+        setIsArchitectureOpened(current => !current);
+        setIsCivilOpened(false);
+        setIsBuildingOpened(false);
+        setIsMechanicalOpened(false);
+        setIsElectricalOpened(false);
+        setIsPlumbingOpened(false);
+        setIsTechnologyOpened(false);
+        setIsSafetyOpened(false);
     };
 
     const handleMechanicalClick = () => {
-        setIsMechanicalActive(current => !current);
-        setIsActive(true);
-        setIsBuildingActive(true);
-        setIsArchitectureActive(true);
-        setIsElectricalActive(true);
-        setIsPlumbingActive(true);
-        setIsTechnologyActive(true);
-        setIsSafetyActive(true);
+        setIsMechanicalOpened(current => !current);
+        setIsCivilOpened(false);
+        setIsBuildingOpened(false);
+        setIsArchitectureOpened(false);
+        setIsElectricalOpened(false);
+        setIsPlumbingOpened(false);
+        setIsTechnologyOpened(false);
+        setIsSafetyOpened(false);
     };
 
     const handleElectricalClick = () => {
-        setIsElectricalActive(current => !current);
-        setIsActive(true);
-        setIsBuildingActive(true);
-        setIsArchitectureActive(true);
-        setIsMechanicalActive(true);
-        setIsPlumbingActive(true);
-        setIsTechnologyActive(true);
-        setIsSafetyActive(true);
+        setIsElectricalOpened(current => !current);
+        setIsCivilOpened(false);
+        setIsBuildingOpened(false);
+        setIsArchitectureOpened(false);
+        setIsMechanicalOpened(false);
+        setIsPlumbingOpened(false);
+        setIsTechnologyOpened(false);
+        setIsSafetyOpened(false);
     };
 
+    
     const handlePlumbingClick = () => {
-        setIsPlumbingActive(current => !current);
-        setIsElectricalActive(true);
-        setIsActive(true);
-        setIsBuildingActive(true);
-        setIsArchitectureActive(true);
-        setIsMechanicalActive(true);
-        setIsElectricalActive(true);
-        setIsTechnologyActive(true);
-        setIsSafetyActive(true);
+        setIsPlumbingOpened(current => !current);
+        setIsCivilOpened(false);
+        setIsBuildingOpened(false);
+        setIsArchitectureOpened(false);
+        setIsMechanicalOpened(false);
+        setIsElectricalOpened(false);
+        setIsTechnologyOpened(false);
+        setIsSafetyOpened(false);
     };
 
     const handleTechnologyClick = () => {
-        setIsTechnologyActive(current => !current);
-        setIsPlumbingActive(true);
-        setIsElectricalActive(true);
-        setIsActive(true);
-        setIsBuildingActive(true);
-        setIsArchitectureActive(true);
-        setIsMechanicalActive(true);
-        setIsElectricalActive(true);
-        setIsPlumbingActive(true);
-        setIsSafetyActive(true);
+        setIsTechnologyOpened(current => !current);
+        setIsCivilOpened(false);
+        setIsBuildingOpened(false);
+        setIsArchitectureOpened(false);
+        setIsMechanicalOpened(false);
+        setIsElectricalOpened(false);
+        setIsPlumbingOpened(false);
+        setIsSafetyOpened(false);
     };
 
     const handleSafetyClick = () => {
-        setIsSafetyActive(current => !current);
-        setIsTechnologyActive(current => !current);
-        setIsPlumbingActive(true);
-        setIsElectricalActive(true);
-        setIsActive(true);
-        setIsBuildingActive(true);
-        setIsArchitectureActive(true);
-        setIsMechanicalActive(true);
-        setIsElectricalActive(true);
-        setIsPlumbingActive(true);
-        setIsTechnologyActive(true);
+        setIsSafetyOpened(current => !current);
+        setIsCivilOpened(false);
+        setIsBuildingOpened(false);
+        setIsArchitectureOpened(false);
+        setIsMechanicalOpened(false);
+        setIsElectricalOpened(false);
+        setIsPlumbingOpened(false);
+        setIsTechnologyOpened(false);
     };
 
     return (
@@ -143,11 +142,9 @@ export default function Masterplan() {
             
             <div className="assessment-dropdown">
                 <div className="assessment-dropdown-list">
-                    <p className="civil" onClick={handleClick}>CIVIL</p>
-                        <div style={{
-                            display: isActive ? 'none': '',
-                        }}>
-                            <p className="drop-container">The civil assessment included a walk-thru of each site to observe conditions with regard to drainage and detention, grading, site utilities and paved surfaces. Any observed deficiencies were noted and reviewed with the assessment team and with District representatives to confirm recommendations and timing. The civil consultants looked for observable deficiencies that included but were not limited to the following:</p>
+                    <p className="civil" onClick={handleCivilClick}>CIVIL</p>
+                    <Collapse isOpened={isCivilOpened ? true : false}>
+                        <p className="drop-container">The civil assessment included a walk-thru of each site to observe conditions with regard to drainage and detention, grading, site utilities and paved surfaces. Any observed deficiencies were noted and reviewed with the assessment team and with District representatives to confirm recommendations and timing. The civil consultants looked for observable deficiencies that included but were not limited to the following:</p>
                             <ul className="drop-container">
                                 <li>Drainage</li>
                                 <li>Driveways</li>
@@ -157,13 +154,11 @@ export default function Masterplan() {
                                 <li>Site grading</li>
                                 <li>Site utilities (Sanitary Sewer, Storm Drain, Domestic Water and Fire Supply)</li>
                             </ul>
-                        </div>
+                    </Collapse>
+                    <br></br>
                     <p className="building-envelope" onClick={handleBuildingClick}>BUILDING ENVELOPE</p>
-                    
-                        <div  style={{
-                            display: isBuildingActive ? 'none': '',
-                        }}>
-                            <p className="drop-container">The basic function of the exterior enclosure of a building is to protect the covered and/or conditioned spaces within from the surrounding external environment. As such, the building envelope assessment involved a visual inspection of the protective systems, structures and materials that make up the exterior envelope of each building to include exterior doors and door openings, windows, skylights, canopies and roofs. During the assessment, the building envelope consultant walked the facility inside and out to observe and document existing conditions and provide prioritized recommendations based on any needs identified. The consultant looked for observable deficiencies that may have included but were not limited to the following:</p>
+                    <Collapse isOpened={isBuildingOpened ? true : false}>
+                        <p className="drop-container">The basic function of the exterior enclosure of a building is to protect the covered and/or conditioned spaces within from the surrounding external environment. As such, the building envelope assessment involved a visual inspection of the protective systems, structures and materials that make up the exterior envelope of each building to include exterior doors and door openings, windows, skylights, canopies and roofs. During the assessment, the building envelope consultant walked the facility inside and out to observe and document existing conditions and provide prioritized recommendations based on any needs identified. The consultant looked for observable deficiencies that may have included but were not limited to the following:</p>
                             <ul className="drop-container">
                                 <li>Visible damage, deterioration, and/or exposure with regard to roofs and/or exterior windows, doors, masonry, painted surfaces, etc.</li>
                                 <li>Roof surface areas cluttered with leaves and/or debris</li>
@@ -173,12 +168,11 @@ export default function Masterplan() {
                                 <li>Active roof leaks and/or visible water damage on ceilings and/or walls</li>
                                 <li>Sloping or sagging ceilings, floors, and/or roofs</li>
                                 <li>Foreign substances that could corrode roofing material, sealants, and/or obstruct gutters, drainpipes, air intakes, or exhausts (such as nests or droppings)</li>
-                            </ul>
-                        </div>
+                        </ul>
+                    </Collapse>  
+                    <br></br>  
                     <p className="architecture" onClick={handleArchitectureClick}>ARCHITECTURE</p>
-                        <div style={{
-                            display: isArchitectureActive ? 'none': '',
-                        }}>
+                    <Collapse isOpened={isArchitectureOpened ? true : false}> 
                         <p className="drop-container">The architectural assessment included a walk-thru of the entire campus to observe interior and exterior building conditions and to identify potential deficiencies with regard to interior finishes and fixtures such as ceilings, flooring, painted surfaces, casework and millwork, doors and door hardware, walls, windows and window coverings, and over-all structural integrity. A welcoming school campus with well-maintained landscaping and great curb appeal can be a source of pride for both a school and the community. Additionally, wise plant selection along with proper irrigation can reduce operating costs while contributing to a sustainable environment. The architects evaluated curb appeal, signage, way-finding, accessibility (in and around buildings, to, from and throughout the site), as well as over-all aesthetics, design, and functionality. The architectural team looked for observable deficiencies related to, but certainly not limited to the following:</p>
                             <ul className="drop-container">
                                 <li>General condition of ceilings, walls, and floors (including any areas damaged by water or with visible tears, holes, or cracks)</li>
@@ -198,11 +192,10 @@ export default function Masterplan() {
                                 <li>Irrigation system condition and functionality</li>
                                 <li>Hardcourts and play fields</li>
                             </ul>
-                        </div>
+                    </Collapse> 
+                    <br></br>      
                     <p className="mechanical" onClick={handleMechanicalClick}>MECHANICAL</p>
-                        <div style={{
-                            display: isMechanicalActive ? 'none': '',
-                        }}>
+                    <Collapse isOpened={isMechanicalOpened ? true : false}>
                         <p className="drop-container">Properly functioning heating, ventilation, and air conditioning (HVAC) systems are needed to maintain operational facilities with safe, healthy, and comfortable learning environments for both students and staff. HVAC systems are also large consumers of energy and contribute significantly to the total energy usage on school campuses every day. The mechanical assessment focused on the integrity of building HVAC systems and component systems. The consultant looked for observable deficiencies that included but were not limited to the following:</p>
                             <ul className="drop-container">
                                 <li>Air conditioning and/or heating systems that are poorly functioning or non-functional</li>
@@ -222,11 +215,10 @@ export default function Masterplan() {
                                 <li>Irrigation system condition and functionality</li>
                                 <li>Signs of refrigerant leakage</li>
                             </ul>
-                        </div>
+                    </Collapse>
+                    <br></br>
                     <p className="electrical" onClick={handleElectricalClick}>ELECTRICAL</p>
-                        <div style={{
-                            display: isElectricalActive ? 'none': '',
-                        }}>
+                    <Collapse isOpened={isElectricalOpened ? true : false}>
                         <p className="drop-container">To help ensure the safety of students and staff and the protection of facility assets, the electrical assessment involved a walk-thru of the entire site to evaluate the integrity of electrical systems and components to include utility service and switchgear; wiring, conduit and distribution; receptacles and appliances; as well as interior and exterior lighting. The consultant looked for observable deficiencies that included but were not limited to the following:</p>
                             <ul className="drop-container">
                                 <li>Inadequate power supply and/or distribution</li>
@@ -242,11 +234,10 @@ export default function Masterplan() {
                                 <li>Improperly located appliances</li>
                                 <li>Corrosion of metal system elements exposed to groundwater</li>
                             </ul>
-                        </div>
+                    </Collapse>
+                    <br></br>
                     <p className="plumbing" onClick={handlePlumbingClick}>PLUMBING</p>
-                        <div style={{
-                            display: isPlumbingActive ? 'none': '',
-                        }}>
+                    <Collapse isOpened={isPlumbingOpened ? true : false}>
                         <p className="drop-container">Properly maintained restrooms and drinking fountains contribute to the health of students and staff and also assist in reducing excessive water consumption. The plumbing assessment included a walk-thru of the entire site to observe the integrity of piping, drainage and distribution systems and related components, with any issues noted and prioritized. The consultant looked for observable deficiencies that included but were not limited to the following:</p>
                             <ul className="drop-container">
                                 <li>Outdated, inefficient and/or non-functional fixtures, systems and/or controls</li>
@@ -258,12 +249,10 @@ export default function Masterplan() {
                                 <li>Missing restroom partitions and/or stall doors</li>
                                 <li>Inoperable or missing exhaust fans</li>
                             </ul>
-                        </div>
-                        
+                    </Collapse>
+                    <br></br>     
                     <p className="technology" onClick={handleTechnologyClick}>TECHNOLOGY</p>
-                        <div style={{
-                            display: isTechnologyActive ? 'none': '',
-                        }}>
+                    <Collapse isOpened={isTechnologyOpened ? true : false}>   
                         <p className="drop-container">The technology assessment included a walk-thru of each site to observe conditions with regard to a variety of systems and infrastructure including network, Internet, classroom, security and audio visual. Any observed deficiencies were noted, compared to best-practice standards and District standards, discussed with the assessment team and with District representatives to review recommendations and priorities. The technology consultants looked for observable deficiencies related to the following:</p>
                             <ul className="drop-container">
                                 <li>Network Systems - data cabling, network switches/routers, phone systems, and wireless network</li>
@@ -275,12 +264,10 @@ export default function Masterplan() {
                                 <li>Audio Visual Systems - sound systems, bell, clock, public address and board room systems</li>
                                 <li>Student Devices - 1:1, BYOD, computer carts, classroom computers, computer labs</li>
                             </ul>
-                        </div>
+                    </Collapse>
+                    <br></br> 
                     <p className="safety" onClick={handleSafetyClick}>SAFETY AND SECURITY</p>
-                        <div style={{
-                            display: isSafetyActive ? 'none': '',
-                        }}>
-                        
+                    <Collapse isOpened={isSafetyOpened ? true : false}>
                         <p className="drop-container">To assist in providing a safe and secure facility for students and staff as well as the protection of facility assets, a safety audit was conducted as a part of the condition assessment. The scope of the audit included a review of site elements such as fencing, security cameras and intercoms; building elements such as access control, resistive glass, and intrusion detection, as well as processes and operational procedures related to safety and security. The security consultant looked for observable deficiencies with regard to a variety of elements and universally adopted best practice standards to include, but not limited to the following:</p>
                             <ul className="drop-container">
                                 <li >Daily, on-site law enforcement</li>
@@ -298,11 +285,14 @@ export default function Masterplan() {
                                 <li>Fencing</li>
                                 <li>Site and building signage</li>
                             </ul>
-                            
-                        </div>
+                    </Collapse>
+                    <br></br>
                 </div>
             </div>
-            
+            <div className="assessments-navlink">
+                <h4><NavLink className="navlinkstyle" to="/assessments">SCHOOL ASSESSMENTS</NavLink></h4>
+            </div>
         </div>
+        
     )
 }
