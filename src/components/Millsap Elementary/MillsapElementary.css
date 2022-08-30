@@ -59,7 +59,12 @@
     
   } 
 
-  td {
-    --size: 0.125
-  }
+tr, td {
+    width: 20rem;
+    height: 8rem;
+    border: 1px solid;
+    border-spacing: 5rem;
+    
+}
+
 

@@ -1,10 +1,19 @@
 import React from "react";
 import './MillsapElementary.css'
 import elementary from '../../resources/images/elementary.jpg'
+import { Chart } from "react-google-charts";
+
+const data = [
+    ["Element", "Cost Estimate $", { role: "style" }],
+    ["Priority 1", 125000, "#B86C7E"], // RGB value
+    ["Priority 2", 350000, "#B86C7E"], // English color name
+    ["Priority 3", 275000, "#B86C7E"],
+    ["Priority 4", 156000, "#B86C7E"], // CSS-style declaration
+  ];
 
 export default function MillsapElementary() {
     return (
-        <div className="school1">
+           <div className="school1">
             <div className="elementary-title">
                 <h5>MILLSAP ELEMENTARY</h5>
             </div>
@@ -29,14 +38,9 @@ export default function MillsapElementary() {
                 </div>
             </div>
             </div>
-            <div className="chart-container">
-            <table id="column-example-12" class="charts-css column show-labels show-primary-axis show-4-secondary-axes">
-                <caption> Column Example #12 </caption>
-                <thead>
-                    <tr><th scope="col"> Year 
-                    </th> <th scope="col"> Progress </th>
-                    </tr></thead> <tbody><tr><th scope="row"> 2016 </th> <td ></td></tr> <tr><th scope="row"> 2017 </th> <td ></td></tr> <tr><th scope="row"> 2018 </th> <td ></td></tr> <tr><th scope="row"> 2019 </th> <td ></td></tr> <tr><th scope="row"> 2020 </th> <td ></td></tr></tbody></table>
-            </div>
+            
+            <br></br>
+            <Chart chartType="ColumnChart" width="100%" height="400px" data={data} />
             
         </div>
     )
