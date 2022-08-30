@@ -40,6 +40,7 @@ export default function MillsapElementary() {
             </div>
             
             <br></br>
+            <h4>PROJECT TOTAL BY PRIORITY</h4>
             <Chart chartType="ColumnChart" width="100%" height="400px" data={data} />
             
         </div>
