@@ -3,7 +3,7 @@ import './MillsapElementary.css'
 import elementary from '../../resources/images/elementary.jpg'
 import { Chart } from "react-google-charts";
 
-const data = [
+const columnChartData = [
     ["Element", "Cost Estimate", { role: "style" }],
     ["Priority 1", 125000, "#B86C7E"], // RGB value
     ["Priority 2", 350000, "#784752"], // English color name
@@ -15,9 +15,9 @@ const columnChartOptoins = {
     legend: 'none'
 }
 
-const pieData = [
+const donutChartData = [
     ["Discipline", "Cost"],
-    ["Civil", 1100, "#B86C7E"],
+    ["Civil", 1100],
     ["Building Envelope", 2000],
     ["Architectual", 2600],
     ["Mechanical", 2000],
@@ -28,10 +28,11 @@ const pieData = [
     ["Security", 2000],
     ["Athletics", 7000],
     ["Nutrition Services", 7000],
-    ["Other", 1000, ],
-  ];  
+    ["Other", 1000],
+  ]; 
 
-const pieHole = {
+
+const donutChartOptions = {
     pieHole: 0.4,
     is3D: false,
     colors: [ "#B86C7E", 
@@ -41,17 +42,19 @@ const pieHole = {
               "#DE8398", 
             ],
     chartArea: {
-        width: '50%',
-        height: '90%'
+        width: '60%',
+        height: 500,
     },
     fontName: 'Poppins',
     legend: {
         textStyle: {
             fontSize: 20
         },
-        position: 'labeled',
+    position: 'labeled',
     }        
-  };  
+                
+
+  };
 
 export default function MillsapElementary() {
     return (
@@ -85,13 +88,19 @@ export default function MillsapElementary() {
             <br></br>
             <h2>MASTER PLAN</h2>
             <h4>PROJECT TOTAL BY PRIORITY</h4>
-            <Chart chartType="ColumnChart" width="100%" height="400px" data={data} options={columnChartOptoins}/>
+            <Chart chartType="ColumnChart" width="100%" height="400px" data={columnChartData} options={columnChartOptoins}/>
             <h4>PROJECT TOTAL BY DISCIPLINE</h4>
-            
         </div>
-        <div>
-            <Chart className="donut-chart" chartType="PieChart"  data={pieData} options={pieHole}/>
+        <div className="donut-chart">
+        
+            <Chart 
+                chartType="PieChart"
+                data={donutChartData}
+                options={donutChartOptions}
+                width="100%" height="400px"
+                />
         </div>
+        <br></br>
         </div>
     )
 }
