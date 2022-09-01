@@ -61,21 +61,21 @@ export default function MillsapElementary() {
         <div>
            <div className="school1">
             <div className="elementary-title">
-                <h5>MILLSAP ELEMENTARY</h5>
+                <h4>MILLSAP ELEMENTARY</h4>
             </div>
             <div className="pic-content-container">
             
             <div className="elementary-content-container">
                 <div className="elementary-content-title">
-                    <p>SITE INFORMATION</p>
+                    <p><span>SITE INFORMATION</span></p>
                 </div>
                 <div className="site-information">
-                    <p>ADDRESS: 101 Wilson Bend Road, Millsap, TX 76066</p>
-                    <p>CONSTRUCTED: 1965</p>
-                    <p>Building Area: 39,722 SF</p>
-                    <p>Site Acreage: 10</p>
-                    <p>Capacity: 700</p>
-                    <p>Enrollment: 404</p>
+                    <p><span>ADDRESS:</span> 101 Wilson Bend Road, Millsap, TX 76066</p>
+                    <p><span>CONSTRUCTED:</span> CONSTRUCTED: 1965</p>
+                    <p><span>Building Area:</span> 39,722 SF</p>
+                    <p><span>Site Acreage:</span> 10</p>
+                    <p><span>Capacity:</span> 700</p>
+                    <p><span>Enrollment:</span> 404</p>
                 </div>
             </div>
             <div className="pic-container">
