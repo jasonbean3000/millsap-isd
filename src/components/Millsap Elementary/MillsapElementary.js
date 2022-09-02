@@ -61,7 +61,7 @@ export default function MillsapElementary() {
         <div>
            <div className="school1">
             <div className="elementary-title">
-                <h4>MILLSAP ELEMENTARY</h4>
+                <h1>MILLSAP ELEMENTARY SCHOOL</h1>
             </div>
             <div className="pic-content-container">
             
@@ -86,10 +86,12 @@ export default function MillsapElementary() {
             </div>
             
             <br></br>
-            <h2>MASTER PLAN</h2>
-            <h4>PROJECT TOTAL BY PRIORITY</h4>
+            
+            <h4 className="project-by-priorty">ASSESSMENT TOTALS BY PRIORITY</h4>
             <Chart chartType="ColumnChart" width="100%" height="400px" data={columnChartData} options={columnChartOptoins}/>
-            <h4>PROJECT TOTAL BY DISCIPLINE</h4>
+            <br></br>
+            <br></br>
+            <h4 className="project-by-discipline">ASSESSMENT TOTALS BY DISCIPLINE</h4>
         </div>
         <div className="donut-chart">
         

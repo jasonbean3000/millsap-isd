@@ -72,3 +72,15 @@ h2 {
 span {
     font-weight: bold;
 }
+
+.project-by-priorty {
+    margin-bottom: 0%;
+}
+
+.project-by-discipline {
+    margin-bottom: 9%;
+}
+
+.donut-chart {
+    margin-bottom: 5%;
+}

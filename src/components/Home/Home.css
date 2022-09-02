@@ -45,6 +45,10 @@
     font-size: 1.2rem;
 }
 
+.mission-statement h2, .master-planning h2 {
+    margin-bottom: 1%;
+} 
+
 .master-planning {
     font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;

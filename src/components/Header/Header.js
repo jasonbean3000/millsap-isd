@@ -11,7 +11,7 @@ export default function Header() {
 
     return (
         <div id='header-scroll' className='header'>
-            <img alt='' src={logo} />
+            <img className="logo" alt='' src={logo} />
             <NavLink activeClassName='active-nav-link' className='navlink' to="/home">HOME</NavLink>
             <NavLink activeClassName='active-nav-link' className='navlink' to="/masterplan">MASTER PLAN</NavLink>
                 <div className="school-dropdown">
