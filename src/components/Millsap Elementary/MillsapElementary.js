@@ -2,8 +2,8 @@ import React from "react";
 import './MillsapElementary.css'
 import elementary from '../../resources/images/elementary.jpg'
 import { Chart } from "react-google-charts";
-// import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import Map from "../Map";
+
 
 
 
@@ -92,10 +92,9 @@ export default function MillsapElementary() {
                 </div>
             </div>
             </div>
-            <div>
-            {/* <Wrapper apiKey={"AIzaSyAZY6HUX5Wbz3QZVQvDHNeQq6-lLXl2zck"} > */}
-            <Map />
-            {/* </Wrapper> */}
+            <div className="bingMap">
+            <Map />    
+            
             </div>
             <br></br>
             

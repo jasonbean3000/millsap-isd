@@ -1,8 +1,6 @@
 import React from "react";
-// import { useEffect } from "react";
-// import { useState } from "react";
-// import { useRef } from "react";
 import BingMapsReact from "bingmaps-react";
+import './Map.css'
 
 
 
@@ -16,34 +14,15 @@ export default function Map() {
       }}
       width="500px"
       viewOptions={{
-        center: { latitude: 42.360081, longitude: -71.058884 },
-        mapTypeId: "grayscale",
+        center: { latitude: 32.765185, longitude: -98.015850 },
+        mapTypeId: "aerial",
+        zoom: 16
       }}
     />
   );
+};
 
 
 
-
-
-  //    const ref = useRef(null);
-  //   const [map, setMap] = useState();
-
-  //   useEffect(() => {
-  //      if (ref.current && !map) {
-  //        setMap(new window.google.maps.Map(ref.current, {}));
-  //     }
-  //     }, [ref, map]);
-
-  //  return (
-  //       <div ref={ref} style={{
-  //           height: 400,
-  //           width: 400,
-  //          zoom: 3, 
-  //           center: { lat: 32.765, lng: -98.017 }} }>
-        
-  //        </div>
-  //    )
- };
 
 
