@@ -2,6 +2,11 @@ import React from "react";
 import './MillsapElementary.css'
 import elementary from '../../resources/images/elementary.jpg'
 import { Chart } from "react-google-charts";
+// import { Wrapper, Status } from "@googlemaps/react-wrapper";
+import Map from "../Map";
+
+
+
 
 const columnChartData = [
     ["Element", "Cost Estimate", { role: "style" }],
@@ -11,7 +16,7 @@ const columnChartData = [
     ["Priority 4", 156000, "#DE8398"], // CSS-style declaration
   ];
 
-const columnChartOptoins = {
+const columnChartOptions = {
     legend: 'none'
 }
 
@@ -58,6 +63,9 @@ const donutChartOptions = {
 
 export default function MillsapElementary() {
     return (
+
+        
+
         <div>
            <div className="school1">
             <div className="elementary-title">
@@ -84,11 +92,15 @@ export default function MillsapElementary() {
                 </div>
             </div>
             </div>
-            
+            <div>
+            {/* <Wrapper apiKey={"AIzaSyAZY6HUX5Wbz3QZVQvDHNeQq6-lLXl2zck"} > */}
+            <Map />
+            {/* </Wrapper> */}
+            </div>
             <br></br>
             
             <h4 className="project-by-priorty">ASSESSMENT TOTALS BY PRIORITY</h4>
-            <Chart chartType="ColumnChart" width="100%" height="400px" data={columnChartData} options={columnChartOptoins}/>
+            <Chart chartType="ColumnChart" width="100%" height="400px" data={columnChartData} options={columnChartOptions}/>
             <br></br>
             <br></br>
             <h4 className="project-by-discipline">ASSESSMENT TOTALS BY DISCIPLINE</h4>
