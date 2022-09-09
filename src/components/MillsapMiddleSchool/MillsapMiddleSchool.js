@@ -2,6 +2,7 @@ import React from "react";
 import './MillsapMiddleSchool.css'
 import millsapmiddle from '../../resources/images/millsapmiddle.jpg'
 import { Chart } from "react-google-charts";
+import MiddleSchoolMap from "./MiddleSchoolMap";
 
 const columnChartData = [
     ["Element", "Cost Estimate", { role: "style" }],
@@ -83,7 +84,10 @@ export default function MillsapMiddleSchool() {
                 </div>
             </div>
             </div>
-
+            <div className="bingMap">
+            <MiddleSchoolMap />    
+            
+            </div>
             <br></br>
 
             <h4 className="project-by-priorty">ASSESSMENT TOTALS BY PRIORITY</h4>
