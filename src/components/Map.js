@@ -36,19 +36,19 @@ export default function Map() {
     },
   }
 
-  const pushPin = {
-    center: {
-      latitude: 32.76601,
-      longitude: -98.01527,
-    },
-    options: {
-      title: "Millsap Elementary School",
-      subTitle: "101 Wilson Bend Rd, Millsap, TX 76066",
-      icon: 'none'
-    },
-  }
+  // const pushPin = {
+  //   center: {
+  //     latitude: 32.76601,
+  //     longitude: -98.01527,
+  //   },
+  //   options: {
+  //     title: "Millsap Elementary School",
+  //     subTitle: "101 Wilson Bend Rd, Millsap, TX 76066",
+  //     icon: 'none'
+  //   },
+  // }
   
-  const pushPins = [pushPin];
+  // const pushPins = [pushPin];
  
 
   const polygons = [polygon]

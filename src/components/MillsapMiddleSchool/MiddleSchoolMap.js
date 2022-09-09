@@ -74,19 +74,19 @@ export default function MiddleSchoolMap() {
     },
   }
 
-  const pushPin = {
-    center: {
-      latitude: 32.75083,
-      longitude: -98.00888,
-    },
-    options: {
-      title: "Millsap Middle School",
-      subTitle: "301 E Brazos Rd, Millsap, TX 76066",
-      icon: 'none'
-    },
-  }
+  // const pushPin = {
+  //   center: {
+  //     latitude: 32.75083,
+  //     longitude: -98.00888,
+  //   },
+  //   options: {
+  //     title: "Millsap Middle School",
+  //     subTitle: "301 E Brazos Rd, Millsap, TX 76066",
+  //     icon: 'none'
+  //   },
+  // }
   
-  const pushPins = [pushPin];
+  // const pushPins = [pushPin];
  
 
   const polygons = [polygon];
