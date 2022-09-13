@@ -14,8 +14,11 @@
     .logo {
       display: none;
     }
-  }
+}
 
+.main-logo-nav-link {
+    display: inherit;
+}
 
 .navlink {
     text-decoration: none;
