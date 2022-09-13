@@ -7,6 +7,7 @@ import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Masterplan from './components/Masterplan/Masterplan';
 import MillsapElementary from './components/Millsap Elementary/MillsapElementary';
+import MillsapHighSchool from './components/MillsapHighSchool/MillsapHighSchool';
 import MillsapMiddleSchool from './components/MillsapMiddleSchool/MillsapMiddleSchool';
 import ScrollToTop from './utilities/ScrollToTop';
 
@@ -39,6 +40,9 @@ function App() {
             </Route>
             <Route path='/millsapmiddle'>
               <MillsapMiddleSchool />
+            </Route>
+            <Route path='/millsaphighschool'>
+              <MillsapHighSchool />
             </Route>
           </ScrollToTop>
         </main>

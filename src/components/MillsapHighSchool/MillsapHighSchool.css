@@ -1,0 +1,90 @@
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.school3 {
+    font-size: 1.5rem;
+    font-family: 'Poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 3%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #3d3338;
+    margin-left: 20%;
+    margin-right: 20%;
+    animation: fadeIn 2s;
+}
+
+.highschool-title {
+    border-style: none none groove none;
+    width: 100%;
+    text-align: center;
+}
+
+.school-pic {
+    padding-top: 3%;
+}
+
+.highschool-content-title {
+    font-size: 1.4rem; 
+}
+
+.site-information p {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.pic-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-style: none none groove none;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  #column-example-12 {
+    height: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+  } 
+
+tr, td {
+    width: 20rem;
+    height: 8rem;
+    border: 1px solid;
+    border-spacing: 5rem;
+}
+
+h2 {
+    margin-bottom: 0%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.project-by-priorty {
+    margin-bottom: 0%;
+}
+
+.project-by-discipline {
+    margin-bottom: 9%;
+}
+
+.donut-chart {
+    margin-bottom: 5%;
+}
+
+.bingMap {
+    margin-top: 2%;
+}

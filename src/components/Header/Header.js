@@ -19,6 +19,7 @@ export default function Header() {
                         <div className="school-dropdown-menu">
                             <NavLink className='school-link' to="/millsapelementary">MILLSAP ELEMENTARY</NavLink>
                             <NavLink className='school-link' to="/millsapmiddle">MILLSAP MIDDLE SCHOOL</NavLink>
+                            <NavLink className='school-link' to="/millsaphighschool">MILLSAP HIGH SCHOOL</NavLink>
                             {/* <NavLink>MILLSAP MIDDLE SCHOOL</NavLink>
                             <NavLink>MILLSAP HIGH SCHOOL</NavLink> */}
                         </div>

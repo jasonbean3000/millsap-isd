@@ -37,12 +37,14 @@
     color: #3d3338;
     text-align: center;
     width: 100%;
+    
 }
 
 .mission-statement p {
     margin: 0 15% 0 15%;
     padding-bottom: 2%;
     font-size: 1.2rem;
+    border-style: none none groove none;
 }
 
 .mission-statement h2, .master-planning h2 {
