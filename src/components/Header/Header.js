@@ -6,12 +6,11 @@ import logo from '../../resources/images/logo.png';
 import './Header.css';
 
 export default function Header() {
-    
-    
-
     return (
         <div id='header-scroll' className='header'>
-            <img className="logo" alt='' src={logo} />
+            <NavLink className="main-logo-nav-link" to="/home">
+                <img className="logo" alt='' src={logo}/>
+            </NavLink>
             <NavLink activeClassName='active-nav-link' className='navlink' to="/home">HOME</NavLink>
             <NavLink activeClassName='active-nav-link' className='navlink' to="/masterplan">MASTER PLAN</NavLink>
                 <div className="school-dropdown">
