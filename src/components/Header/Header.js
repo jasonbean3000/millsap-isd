@@ -29,7 +29,7 @@ export default function Header() {
             <a 
                 className='download-button' 
                 target='blank'
-                href='https://static1.squarespace.com/static/610440d901952c568d86bb6a/t/618afa00ec9fc070204abf4b/1636497929366/Executive+Summary.pdf'>DOWNLOAD THE PDF
+                href='https://pdfhost.io/v/r4uB9gZDk_Your_Community_ISD_Long_Range_Facilities_Assessment'>DOWNLOAD THE PDF
             </a>
         </div>
     )
