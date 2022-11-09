@@ -7,47 +7,33 @@ export default function HighSchoolMap() {
 
   var coords = [
     {
-      latitude: 32.75913,
-      longitude: -98.00996
+      latitude: 32.86161,
+      longitude: -97.19468
     },
     {
-      latitude: 32.75912,
-      longitude: -98.00364
+      latitude: 32.86179,
+      longitude: -97.19253
     },
     {
-      latitude: 32.75190,
-      longitude: -98.00370
+      latitude: 32.86175,
+      longitude: -97.18708
     },
     {
-      latitude: 32.75191,
-      longitude: -98.00546
+      latitude: 32.86019,
+      longitude: -97.18714
     },
     {
-      latitude: 32.75333,
-      longitude: -98.00575
+      latitude: 32.86019,
+      longitude: -97.18639
     },
     {
-      latitude: 32.75334,
-      longitude: -98.00635  
+      latitude: 32.85841,
+      longitude: -97.18639
     },
     {
-        latitude: 32.75312,
-        longitude: -98.00629
-    },
-    {
-        latitude: 32.75315,
-        longitude: -98.00859
-    },
-    {
-        latitude: 32.75275,
-        longitude: -98.00865
-    },
-    {
-      latitude: 32.75272,
-      longitude: -98.01001
+      latitude: 32.85847,
+      longitude: -97.19474
     }
-   
-
   ]
 
   const polygon = {
@@ -55,7 +41,7 @@ export default function HighSchoolMap() {
     options: {
       fillColor: 'rgba(255, 255, 255, 0.1)',
       strokeColor: 'blue',
-      strokeThickness: 1
+      strokeThickness: 3
     },
   }
 
@@ -88,7 +74,7 @@ export default function HighSchoolMap() {
       
       polygons={polygons}
       viewOptions={{
-        center: { latitude: 32.75667, longitude: -98.00630 },
+        center: { latitude: 32.86018, longitude: -97.19033 },
         mapTypeId: "aerial",
         zoom: 16
       }}

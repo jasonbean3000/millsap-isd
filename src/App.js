@@ -32,9 +32,6 @@ function App() {
             <Route path='/masterplan'>
               <Masterplan />
             </Route>
-            <Route path='/assessments'>
-              <Assessments />
-            </Route>
             <Route path='/millsapelementary'>
               <MillsapElementary />
             </Route>

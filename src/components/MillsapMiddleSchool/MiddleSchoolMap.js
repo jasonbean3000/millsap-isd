@@ -7,60 +7,20 @@ export default function MiddleSchoolMap() {
 
   var coords = [
     {
-      latitude: 32.75060,
-      longitude: -98.01116
+      latitude: 32.83614,
+      longitude: -97.23866
     },
     {
-      latitude: 32.75194,
-      longitude: -98.00859
+      latitude: 32.83615,
+      longitude: -97.23529
     },
     {
-      latitude: 32.75322,
-      longitude: -98.00858
+      latitude: 32.83464,
+      longitude: -97.23533
     },
     {
-      latitude: 32.75321,
-      longitude: -98.00582
-    },
-    {
-      latitude: 32.75116,
-      longitude: -98.00584
-    },
-    {
-      latitude: 32.75074,
-      longitude: -98.00713  
-    },
-    {
-        latitude: 32.75087,
-        longitude: -98.00725
-    },
-    {
-        latitude: 32.75060,
-        longitude: -98.00784
-    },
-    {
-        latitude: 32.75072,
-        longitude: -98.00793
-    },
-    {
-        latitude: 32.75049,
-        longitude: -98.00832
-    },
-    {
-        latitude: 32.75077,
-        longitude: -98.00854
-    },
-    {
-        latitude: 32.75024,
-        longitude: -98.00963
-    },
-    {
-        latitude: 32.74983,
-        longitude: -98.00935
-    },
-    {
-        latitude: 32.74935,
-        longitude: -98.01028
+      latitude: 32.83466,
+      longitude: -97.23868
     }
 
   ]
@@ -70,7 +30,7 @@ export default function MiddleSchoolMap() {
     options: {
       fillColor: 'rgba(255, 255, 255, 0.1)',
       strokeColor: 'blue',
-      strokeThickness: 1
+      strokeThickness: 3
     },
   }
 
@@ -103,7 +63,7 @@ export default function MiddleSchoolMap() {
       
       polygons={polygons}
       viewOptions={{
-        center: { latitude: 32.75083, longitude: -98.00888 },
+        center: { latitude: 32.83543, longitude: -97.23678 },
         mapTypeId: "aerial",
         zoom: 17
       }}

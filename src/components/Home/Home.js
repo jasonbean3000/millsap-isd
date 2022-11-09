@@ -10,22 +10,22 @@ function Home (){
                 <p>Long Range Facilities Master Plan</p>
             </div>
             <div className='mission-statement'>
-                <h2>MILLSAP ISD FORWARD</h2>
-                <p>The facility master plan is a roadmap for the long-term stewardship of school facilities in the Twin Rivers Unified School District. Since its creation in 2015, this plan has been updated annually to reflect progress made, realign and reaffirm long-term goals, and to continually identify ways in which our school facilities can best support teaching and learning in the classroom. We are continuously focused on implementing the long-term vision to build and maintain school facilities that support the delivery of high-quality education. Each accomplishment propels us forward in that goal. See where we’ve been, where we are, where we’re going and how we’ll get there.</p>
+                <h2>COMMUNITY ISD FORWARD</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus posuere lacus enim, ac vulputate nisl euismod quis. Nullam id molestie metus, non malesuada nunc. Aenean mattis mi et pulvinar gravida. Duis ut convallis elit. Curabitur tincidunt, mauris ac venenatis hendrerit, leo mi ultricies tortor, quis eleifend elit arcu in elit. Praesent gravida tempor tincidunt. Fusce varius nunc nec odio rutrum tristique. Morbi hendrerit scelerisque blandit. Etiam ac justo et ex gravida eleifend. Nam nunc orci, blandit nec velit vel, varius ullamcorper odio. Ut egestas turpis eget dignissim cursus. Aliquam quis nisi risus. Donec ut varius urna. Donec blandit dolor et.</p>
             </div>
             <div className='master-planning'>
                 <h2>MASTER PLANNING</h2>
-                <p>The development of a Long-Range Facility Master Plan is a multi-phase initiative that includes an assessment of existing facilities conditions. This encompasses a building by building, system level examination used to determine the current state of all facilities. Click below to learn more about the master planning process.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque semper quis sapien quis dapibus. Proin condimentum, risus vitae semper pretium, risus mi sodales quam, vel pulvinar lacus dolor in purus. Praesent dapibus rutrum urna at vehicula. Quisque efficitur est eget accumsan maximus. Phasellus auctor pulvinar bibendum. Aliquam tempus consequat orci.</p>
                 <div className='master-plan-description'>
                     
                     <div className='master-plan-description-text'>
                         <h3>
-                        THE MILLSAP ISD LONG-RANGE FACILITIES MASTER PLAN IS:
+                        THE COMMUNITY ISD LONG-RANGE FACILITIES MASTER PLAN IS:
                         </h3>
                         <ul>
-                            <li>A ROADMAP FOR FACILITIES DECISIONS, BOTH ON EXISTING AND FUTURE SITES</li>
-                            <li>A BUDGETING TOOL FOR THE DISTRICT</li>
-                            <li>A LIVING DOCUMENT THAT CAN KEEP VESTED PARTIES UP-TO-DATE</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nunc nibh.</li>
+                            <li>Praesent dapibus rutrum urna at vehicula.</li>
+                            <li>Phasellus auctor pulvinar bibendum. Aliquam tempus consequat orci.</li>
                         </ul>
                     </div>
                 </div>

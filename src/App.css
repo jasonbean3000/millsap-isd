@@ -24,11 +24,12 @@ main {
 }
 
 .footer {
+    text-align: center;
     grid-area: footer;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7A0230;
+    background-color: #003f5c;
     height: 5rem;
     margin: none;
     color: #fdfdfb;
@@ -40,7 +41,7 @@ main {
 }
 
 .footer a {
-    color: #55F25F;
+    color: #FFDD19;
     text-decoration: none;
 }
 
@@ -48,5 +49,13 @@ main {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 420px) {
+    .footer p {
+        font-size: 1.25rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+       
+}
 
 

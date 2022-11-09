@@ -88,3 +88,31 @@ span {
 .bingMap {
     margin-top: 2%;
 }
+
+@media only screen and (max-width: 550px) {
+    .pic-content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .school3 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .highschool-title h1 {
+        font-size: 1.75rem;
+        margin-top: 10%;
+    }
+    .pic-container img {
+        width: 275px;
+        height: 200px;
+    }
+    .bingMap {
+        display: none;
+    }
+    .donut-chart {
+        width: 350px;
+    }
+    .project-by-priorty, .project-by-discipline {
+        text-align: center;
+    }
+}

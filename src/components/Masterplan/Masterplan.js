@@ -2,12 +2,17 @@ import React from "react";
 import { useState } from "react";
 import './Masterplan.css';
 import { Collapse } from "react-collapse";
-import { NavLink } from 'react-router-dom';
-import shield from '../../resources/images/shield.webp';
-import masterplanprocess from '../../resources/images/masterplanprocess.jpg';
-import masterplanbuilding from '../../resources/images/masterplanbuilding.jpg';
-
-
+import shield from '../../resources/images/shield.png';
+import interiorFinishes from '../../resources/images/interior-walls-windows.jpg'
+import security from '../../resources/images/security.jpg'
+import exterior from '../../resources/images/exterior-walls-doors.jpg'
+import roof from '../../resources/images/roof.jpg'
+import hvac from '../../resources/images/hvac.jpg'
+import lighting from '../../resources/images/interior-lights.jpg'
+import fixedFurnishes from '../../resources/images/fixed-furnishings.jpg'
+import ada from '../../resources/images/ADA.jpg'
+import landscape from '../../resources/images/landscape.jpg'
+import signage from '../../resources/images/signage.jpg'
 
 export default function Masterplan() {
 
@@ -109,188 +114,422 @@ export default function Masterplan() {
         setIsTechnologyOpened(false);
     };
 
+    const [isPic1, setIsPic1] = useState(true);
+    const [isPic2, setIsPic2] = useState(false);
+    const [isPic3, setIsPic3] = useState(false);
+    const [isPic4, setIsPic4] = useState(false);
+    const [isPic5, setIsPic5] = useState(false);
+    const [isPic6, setIsPic6] = useState(false);
+    const [isPic7, setIsPic7] = useState(false);
+    const [isPic8, setIsPic8] = useState(false);
+    const [isPic9, setIsPic9] = useState(false);
+    const [isPic10, setIsPic10] = useState(false);
+
+    const handlePic1Click = () => {
+        setIsPic1(true)
+        setIsPic2(false)
+        setIsPic3(false)
+        setIsPic4(false)
+        setIsPic5(false)
+        setIsPic6(false)
+        setIsPic7(false)
+        setIsPic8(false)
+        setIsPic9(false)
+        setIsPic10(false)
+    }
+
+    const handlePic2Click = () => {
+        setIsPic1(false)
+        setIsPic2(true)
+        setIsPic3(false)
+        setIsPic4(false)
+        setIsPic5(false)
+        setIsPic6(false)
+        setIsPic7(false)
+        setIsPic8(false)
+        setIsPic9(false)
+        setIsPic10(false)
+    }
+
+    const handlePic3Click = () => {
+        setIsPic1(false)
+        setIsPic2(false)
+        setIsPic3(true)
+        setIsPic4(false)
+        setIsPic5(false)
+        setIsPic6(false)
+        setIsPic7(false)
+        setIsPic8(false)
+        setIsPic9(false)
+        setIsPic10(false)
+    }
+
+    const handlePic4Click = () => {
+        setIsPic1(false)
+        setIsPic2(false)
+        setIsPic3(false)
+        setIsPic4(true)
+        setIsPic5(false)
+        setIsPic6(false)
+        setIsPic7(false)
+        setIsPic8(false)
+        setIsPic9(false)
+        setIsPic10(false)
+    }
+
+    const handlePic5Click = () => {
+        setIsPic1(false)
+        setIsPic2(false)
+        setIsPic3(false)
+        setIsPic4(false)
+        setIsPic5(true)
+        setIsPic6(false)
+        setIsPic7(false)
+        setIsPic8(false)
+        setIsPic9(false)
+        setIsPic10(false)
+    }
+
+    const handlePic6Click = () => {
+        setIsPic1(false)
+        setIsPic2(false)
+        setIsPic3(false)
+        setIsPic4(false)
+        setIsPic5(false)
+        setIsPic6(true)
+        setIsPic7(false)
+        setIsPic8(false)
+        setIsPic9(false)
+        setIsPic10(false)
+    }
+
+    const handlePic7Click = () => {
+        setIsPic1(false)
+        setIsPic2(false)
+        setIsPic3(false)
+        setIsPic4(false)
+        setIsPic5(false)
+        setIsPic6(false)
+        setIsPic7(true)
+        setIsPic8(false)
+        setIsPic9(false)
+        setIsPic10(false)
+    }
+
+    const handlePic8Click = () => {
+        setIsPic1(false)
+        setIsPic2(false)
+        setIsPic3(false)
+        setIsPic4(false)
+        setIsPic5(false)
+        setIsPic6(false)
+        setIsPic7(false)
+        setIsPic8(true)
+        setIsPic9(false)
+        setIsPic10(false)
+    }
+
+    const handlePic9Click = () => {
+        setIsPic1(false)
+        setIsPic2(false)
+        setIsPic3(false)
+        setIsPic4(false)
+        setIsPic5(false)
+        setIsPic6(false)
+        setIsPic7(false)
+        setIsPic8(false)
+        setIsPic9(true)
+        setIsPic10(false)
+    }
+
+    const handlePic10Click = () => {
+        setIsPic1(false)
+        setIsPic2(false)
+        setIsPic3(false)
+        setIsPic4(false)
+        setIsPic5(false)
+        setIsPic6(false)
+        setIsPic7(false)
+        setIsPic8(false)
+        setIsPic9(false)
+        setIsPic10(true)
+    }
+
     return (
         <div className="masterplan">
             <div className="master-planning-overview">
                 <h2>OVERVIEW</h2>
                 <h3>LONG RANGE FACILITIES MASTER PLANNING</h3>
-                <p>Twin Rivers Unified School District utilizes the Long Range Facility Master Plan (LRFMP) process to routinely assess each District facility in order to identify immediate and future needs that impact the learning environments at each campus and develop a plan to address them. The District LRFMP was originally developed in 2015. It has been routinely refreshed to reflect changes in external conditions, such as construction costs and funding, as well as District completion of projects. The master plan is a “living document” and is used as a continuous roadmap for long-term stewardship of District facilities.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin leo magna, eu feugiat ex malesuada non. Integer at ipsum nec metus efficitur eleifend. Suspendisse blandit lorem eros, non fermentum lectus suscipit a. Maecenas egestas tortor quam, sit amet hendrerit libero gravida pellentesque. In fringilla felis ut justo tincidunt, a placerat risus facilisis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras tempor accumsan luctus. Nunc interdum at dolor non pulvinar. Vestibulum laoreet dui nec nulla scelerisque facilisis. Sed tempor dignissim nisl non maximus. Pellentesque est tortor, scelerisque.</p>
             </div>
             <div className="LRFMP-process">
                 <img className="shield" alt="" src={shield} />
                 <div className="LRFMP-description">
                     <h4>THE LRFMP IS:</h4>
                     <ul className="LRFMP-list">
-                        <li>A roadmap forward forming guidelines for facilities decisions both on existing and future sites including schools, support centers, and undeveloped parcels</li>
-                        <li>A 25 year vision for TRUSD facilities future</li>
-                        <li>A District-wide facilities perspective taking into consideration instructional, technological, demographic, and facility upkeep goals in consideration of buildings, grounds, technology, furniture, and equipment</li>
-                        <li>A budgeting tool for facility improvement related decisions</li>
-                        <li>Easy to edit, adapt, and change</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique eu sem sed porttitor. Duis et consectetur nibh. Vivamus volutpat ipsum.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae porta eros, vel commodo augue. Duis eu hendrerit nibh.</li>
+                        <li>Morbi eget scelerisque nisi, eget fringilla nisl. Nulla elit.</li>
+                        <li>Praesent vel blandit ligula, vel scelerisque mi.</li>
                     </ul>
                 </div>
             </div>
             <div className="LRFMP-plan-process">
                 <h2>THE MASTER PLAN PROCESS</h2>
-                <p>The development of a Long-Range Facility Master Plan is a multi-phase initiative which includes a review of documentation and records related to existing campuses as well as historical construction and modernization efforts to date; a physical assessment of existing conditions; current space utilization; capacity, enrollment history, and future projections; a thorough understanding of educational programs and program-related needs from a District, site and community perspective; as well as current and future grade-specific and site-specific needs. </p>
-                <img alt='' src={masterplanprocess} />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque est mauris. Aliquam luctus elementum risus ac ultricies. Vestibulum imperdiet eget orci a mattis. Fusce venenatis orci vel facilisis aliquam. Nam maximus, enim vel imperdiet porttitor, tellus purus blandit sem, ac interdum sapien lectus vel urna. Mauris dictum sem nunc, eu condimentum turpis pulvinar eu. Nulla imperdiet convallis condimentum. </p>
+                
+                <div className="arrows-container">
+                    <div className="arrow-1-container">
+                        <div className="arrow-1">
+                            <h2>1.</h2>
+                            <article>Data</article>
+                            <article>Collection</article>
+                        </div>
+                        <div className="arrow-1 arrow-1-overlay"></div>
+                    </div>
+                    <div className="arrow-2-container">
+                        <div className="arrow-2">
+                            <h2>2.</h2>
+                            <article>Visioning +</article>
+                            <article>Educational</article>
+                            <article>Framework</article>
+                        </div>
+                        <div className="arrow-2 arrow-2-overlay"></div>
+                    </div>
+                    <div className="arrow-3-container">
+                        <div className="arrow-3">
+                            <h2>3.</h2>
+                            <article>Facility</article>
+                            <article>Assessments</article>
+                        </div>
+                        <div className="arrow-3 arrow-3-overlay"></div>
+                    </div>
+                    <div className="arrow-4-container">
+                        <div className="arrow-4">
+                            <h2>4.</h2>
+                            <article>Master</article>
+                            <article>Plan</article>
+                            <article>Development</article>
+                        </div>
+                        <div className="arrow-4 arrow-4-overlay"></div>
+                    </div>
+                    <div className="arrow-5-container">
+                        <div className="arrow-5">
+                            <h2>5.</h2>
+                            <article>Implementation</article>
+                            <article>Plan</article>
+                        </div>
+                        <div className="arrow-5 arrow-5-overlay"></div>
+                    </div>
+                </div>
+                <div className="community-outreach-arrow">
+                    <article>Community Outreach</article>
+                </div>
             </div>
             <div className="facility-needs-assessment">
                 <h2>FACILITY NEEDS ASSESSMENTS</h2>
-                <p>Facility condition assessments were conducted by a multi-disciplinary team of architects, engineers and consultants. The physical site walks encompassed a building-by-building system examination of existing conditions on the school site. This includes interiors, exteriors, mechanical, electrical, plumbing, technology and site / civil elements of each campus. </p>
-                <img alt="" className='master-plan-building' src={masterplanbuilding} />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum iaculis pretium lacinia. Nunc vulputate gravida nibh, nec aliquet metus mollis vel. Phasellus egestas dapibus mattis. Donec vehicula lorem a bibendum tincidunt. Mauris faucibus velit sit amet dolor gravida, sit amet. </p>
+                <div className="assessment-container">
+                    <div className="assessments-needs-list-container">
+                        <div className="number-list-container" onClick={handlePic1Click} >
+                            <article  className="number">1</article><article>Building Envelope (exterior)</article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic2Click}>
+                            <article  className="number">2</article><article>Building Envelope (roofs)</article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic3Click}>
+                            <article  className="number">3</article><article>Mechanical, Electrical, Plumbing</article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic4Click} >
+                            <article className="number">4</article><article>Interior Finishes </article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic5Click}>
+                            <article  className="number">5</article><article>Interior Lighting</article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic6Click}>
+                            <article  className="number">6</article><article>Interior Fixed Furnishing</article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic7Click}>
+                            <article  className="number">7</article><article>Safety and Security</article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic8Click}>
+                            <article  className="number">8</article><article>ADA Accessibilty</article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic9Click} >
+                            <article className="number">9</article><article>Site Landscape, Paving, Drainage</article>
+                        </div>
+                        <div className="number-list-container" onClick={handlePic10Click}>
+                            <article  className="number">10</article><article>Way-Finding and Signage</article>
+                        </div>      
+                    </div>
+                    <div className="large-pics-container">
+                        <div style={{display: isPic1 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={exterior} alt='' onClick={handlePic2Click} />
+                            <h5>Building Envelope (exterior)</h5> 
+                        </div>
+                        <div style={{display: isPic2 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={roof} alt='' onClick={handlePic3Click} />
+                            <h5>Building Envelope (roofs)</h5>
+                        </div>
+                        <div style={{display: isPic3 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={hvac} alt='' onClick={handlePic4Click} />
+                            <h5>Mechanical, Electrical, Plumbing</h5>
+                        </div>
+                        <div style={{display: isPic4 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={interiorFinishes} alt='' onClick={handlePic5Click} />
+                            <h5>Interior Finishes (walls, flooring, ceiling)</h5>
+                        </div>
+                        <div style={{display: isPic5 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={lighting} alt='' onClick={handlePic6Click}/>
+                            <h5>Interior Lighting</h5>
+                        </div>
+                        <div style={{display: isPic6 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={fixedFurnishes} alt='' onClick={handlePic7Click} />
+                            <h5>Interior Fixed Furnishing</h5>
+                        </div>
+                        <div style={{display: isPic7 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={security} alt='' onClick={handlePic8Click} />
+                            <h5>Safety and Security</h5>
+                        </div>   
+                        <div style={{display: isPic8 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={ada} alt='' onClick={handlePic9Click}/>
+                            <h5>ADA Accessibilty</h5>
+                        </div>
+                        <div style={{display: isPic9 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={landscape} alt='' onClick={handlePic10Click}/>
+                            <h5>Site Landscape, Paving, Drainage</h5>
+                        </div>
+                        <div style={{display: isPic10 ? 'block' : 'none'}}>
+                            <img className="pic-blown-up" src={signage} alt='' onClick={handlePic1Click}/>
+                            <h5>Way-Finding and Signage</h5>
+                        </div>          
+                    </div>          
+                </div>
             </div>
-            
             <div className="assessment-dropdown">
                 <div className="assessment-dropdown-list">
                     <p className="civil" onClick={handleCivilClick}>CIVIL</p>
                     <Collapse isOpened={isCivilOpened ? true : false}>
-                        <p className="drop-container">The civil assessment included a walk-thru of each site to observe conditions with regard to drainage and detention, grading, site utilities and paved surfaces. Any observed deficiencies were noted and reviewed with the assessment team and with District representatives to confirm recommendations and timing. The civil consultants looked for observable deficiencies that included but were not limited to the following:</p>
+                        <p className="drop-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum sit amet elit finibus porta a vitae mauris. Phasellus et risus scelerisque nibh imperdiet varius id et sapien. Fusce vitae sodales mi. Cras in mollis purus. In hac habitasse platea dictumst. Duis pellentesque efficitur velit, ut ullamcorper velit ullamcorper vehicula. Ut sagittis, massa ut tincidunt feugiat, purus arcu hendrerit risus, sit amet rhoncus diam metus scelerisque est. Aliquam cursus turpis sed felis semper, at aliquet nibh posuere. Vestibulum nisl nisi, ultricies eu turpis at, malesuada fringilla purus. Sed sollicitudin posuere libero, eget convallis ligula egestas auctor. Duis nec porttitor:</p>
                             <ul className="drop-container">
-                                <li>Drainage</li>
-                                <li>Driveways</li>
-                                <li>Concrete parking areas</li>
-                                <li>Asphalt paving</li>
-                                <li>Sidewalks</li>
-                                <li>Site grading</li>
-                                <li>Site utilities (Sanitary Sewer, Storm Drain, Domestic Water and Fire Supply)</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li>Morbi porttitor arcu quis neque vestibulum, sit amet congue dui sagittis. </li>
+                                <li>Sed porttitor, augue quis malesuada vehicula, odio erat commodo libero, eget molestie magna dolor at risus.</li>
+                                <li>Suspendisse viverra sapien mauris, ut efficitur dolor tincidunt id.</li>
+                                <li>Fusce ullamcorper, ipsum eget vulputate vestibulum, justo urna interdum augue, id interdum arcu sem at turpis.</li>
+                                <li>Praesent ex ligula, fermentum vitae dolor in, ultrices posuere nisl.</li>
+                                <li>Donec non efficitur elit, ultrices finibus erat.</li>
+                                <li>tiam fringilla imperdiet elit, a facilisis felis efficitur id.</li>
                             </ul>
                     </Collapse>
                     <br></br>
                     <p className="building-envelope" onClick={handleBuildingClick}>BUILDING ENVELOPE</p>
                     <Collapse isOpened={isBuildingOpened ? true : false}>
-                        <p className="drop-container">The basic function of the exterior enclosure of a building is to protect the covered and/or conditioned spaces within from the surrounding external environment. As such, the building envelope assessment involved a visual inspection of the protective systems, structures and materials that make up the exterior envelope of each building to include exterior doors and door openings, windows, skylights, canopies and roofs. During the assessment, the building envelope consultant walked the facility inside and out to observe and document existing conditions and provide prioritized recommendations based on any needs identified. The consultant looked for observable deficiencies that may have included but were not limited to the following:</p>
+                        <p className="drop-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum sit amet elit finibus porta a vitae mauris. Phasellus et risus scelerisque nibh imperdiet varius id et sapien. Fusce vitae sodales mi. Cras in mollis purus. In hac habitasse platea dictumst. Duis pellentesque efficitur velit, ut ullamcorper velit ullamcorper vehicula. Ut sagittis, massa ut tincidunt feugiat, purus arcu hendrerit risus, sit amet rhoncus diam metus scelerisque est. Aliquam cursus turpis sed felis semper, at aliquet nibh posuere. Vestibulum nisl nisi, ultricies eu turpis at, malesuada fringilla purus. Sed sollicitudin posuere libero, eget convallis ligula egestas auctor. Duis nec porttitor:</p>
                             <ul className="drop-container">
-                                <li>Visible damage, deterioration, and/or exposure with regard to roofs and/or exterior windows, doors, masonry, painted surfaces, etc.</li>
-                                <li>Roof surface areas cluttered with leaves and/or debris</li>
-                                <li>Ponding water on roof areas</li>
-                                <li>Missing or damaged system components</li>
-                                <li>Gutters and/or downspouts improperly anchored to the building; damaged, missing and/or filled with debris</li>
-                                <li>Active roof leaks and/or visible water damage on ceilings and/or walls</li>
-                                <li>Sloping or sagging ceilings, floors, and/or roofs</li>
-                                <li>Foreign substances that could corrode roofing material, sealants, and/or obstruct gutters, drainpipes, air intakes, or exhausts (such as nests or droppings)</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li>Morbi porttitor arcu quis neque vestibulum, sit amet congue dui sagittis. </li>
+                                <li>Sed porttitor, augue quis malesuada vehicula, odio erat commodo libero, eget molestie magna dolor at risus.</li>
+                                <li>Suspendisse viverra sapien mauris, ut efficitur dolor tincidunt id.</li>
+                                <li>Fusce ullamcorper, ipsum eget vulputate vestibulum, justo urna interdum augue, id interdum arcu sem at turpis.</li>
+                                <li>Praesent ex ligula, fermentum vitae dolor in, ultrices posuere nisl.</li>
+                                <li>Donec non efficitur elit, ultrices finibus erat.</li>
+                                <li>tiam fringilla imperdiet elit, a facilisis felis efficitur id.</li>
                         </ul>
                     </Collapse>  
                     <br></br>  
                     <p className="architecture" onClick={handleArchitectureClick}>ARCHITECTURE</p>
                     <Collapse isOpened={isArchitectureOpened ? true : false}> 
-                        <p className="drop-container">The architectural assessment included a walk-thru of the entire campus to observe interior and exterior building conditions and to identify potential deficiencies with regard to interior finishes and fixtures such as ceilings, flooring, painted surfaces, casework and millwork, doors and door hardware, walls, windows and window coverings, and over-all structural integrity. A welcoming school campus with well-maintained landscaping and great curb appeal can be a source of pride for both a school and the community. Additionally, wise plant selection along with proper irrigation can reduce operating costs while contributing to a sustainable environment. The architects evaluated curb appeal, signage, way-finding, accessibility (in and around buildings, to, from and throughout the site), as well as over-all aesthetics, design, and functionality. The architectural team looked for observable deficiencies related to, but certainly not limited to the following:</p>
+                        <p className="drop-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum sit amet elit finibus porta a vitae mauris. Phasellus et risus scelerisque nibh imperdiet varius id et sapien. Fusce vitae sodales mi. Cras in mollis purus. In hac habitasse platea dictumst. Duis pellentesque efficitur velit, ut ullamcorper velit ullamcorper vehicula. Ut sagittis, massa ut tincidunt feugiat, purus arcu hendrerit risus, sit amet rhoncus diam metus scelerisque est. Aliquam cursus turpis sed felis semper, at aliquet nibh posuere. Vestibulum nisl nisi, ultricies eu turpis at, malesuada fringilla purus. Sed sollicitudin posuere libero, eget convallis ligula egestas auctor. Duis nec porttitor:</p>
                             <ul className="drop-container">
-                                <li>General condition of ceilings, walls, and floors (including any areas damaged by water or with visible tears, holes, or cracks)</li>
-                                <li>Missing, damaged, stained, and/or loose ceiling, wall and/or floor tile</li>
-                                <li>Poorly functioning and/or poorly conditioned doors and/or door hardware; inaccessible door openings;</li>
-                                <li>Severe cracks in foundation slab, structural walls, columns, and/or beams</li>
-                                <li>Missing and/or damaged posts, beams or supports (including portable building posts/ beams/supports and/or ramps)</li>
-                                <li>Damage caused by dry rot or mold in structural components</li>
-                                <li>Sloping or sagging ceilings, floors, and/or roofs</li>
-                                <li>Leaning and/or bulging walls</li>
-                                <li>Poor anchorage of non-structural elements (equipment, casework, book cases, etc.)</li>
-                                <li>Safe and welcoming entries; signage (including marquee)</li>
-                                <li>Fencing and gates</li>
-                                <li>Drop-off / pick-up and circulation</li>
-                                <li>Site signage/wayfinding/access</li>
-                                <li>Over-all condition of landscaping and grounds</li>
-                                <li>Irrigation system condition and functionality</li>
-                                <li>Hardcourts and play fields</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li>Morbi porttitor arcu quis neque vestibulum, sit amet congue dui sagittis. </li>
+                                <li>Sed porttitor, augue quis malesuada vehicula, odio erat commodo libero, eget molestie magna dolor at risus.</li>
+                                <li>Suspendisse viverra sapien mauris, ut efficitur dolor tincidunt id.</li>
+                                <li>Fusce ullamcorper, ipsum eget vulputate vestibulum, justo urna interdum augue, id interdum arcu sem at turpis.</li>
+                                <li>Praesent ex ligula, fermentum vitae dolor in, ultrices posuere nisl.</li>
+                                <li>Donec non efficitur elit, ultrices finibus erat.</li>
+                                <li>tiam fringilla imperdiet elit, a facilisis felis efficitur id.</li>
                             </ul>
                     </Collapse> 
                     <br></br>      
                     <p className="mechanical" onClick={handleMechanicalClick}>MECHANICAL</p>
                     <Collapse isOpened={isMechanicalOpened ? true : false}>
-                        <p className="drop-container">Properly functioning heating, ventilation, and air conditioning (HVAC) systems are needed to maintain operational facilities with safe, healthy, and comfortable learning environments for both students and staff. HVAC systems are also large consumers of energy and contribute significantly to the total energy usage on school campuses every day. The mechanical assessment focused on the integrity of building HVAC systems and component systems. The consultant looked for observable deficiencies that included but were not limited to the following:</p>
+                        <p className="drop-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum sit amet elit finibus porta a vitae mauris. Phasellus et risus scelerisque nibh imperdiet varius id et sapien. Fusce vitae sodales mi. Cras in mollis purus. In hac habitasse platea dictumst. Duis pellentesque efficitur velit, ut ullamcorper velit ullamcorper vehicula. Ut sagittis, massa ut tincidunt feugiat, purus arcu hendrerit risus, sit amet rhoncus diam metus scelerisque est. Aliquam cursus turpis sed felis semper, at aliquet nibh posuere. Vestibulum nisl nisi, ultricies eu turpis at, malesuada fringilla purus. Sed sollicitudin posuere libero, eget convallis ligula egestas auctor. Duis nec porttitor:</p>
                             <ul className="drop-container">
-                                <li>Air conditioning and/or heating systems that are poorly functioning or non-functional</li>
-                                <li>Outdated, inefficient, and/or non-functional HVAC system units and/or controls</li>
-                                <li>Gaps, holes, or cracks on air intake filters allowing unfiltered air to enter the ventilator</li>
-                                <li>Loose filters on the air intake</li>
-                                <li>Obstructed ventilation units</li>
-                                <li>Damaged or missing vents</li>
-                                <li>Vibrating or excessively noisy HVAC units</li>
-                                <li>Strong odors near HVAC systems and equipment such as chemical smells, mildew, or trash/debris</li>
-                                <li>Dusty or dirty ventilation grills or vents</li>
-                                <li>Non-functional specialty fans/hoods</li>
-                                <li>Fencing and gates</li>
-                                <li>Drop-off / pick-up and circulation</li>
-                                <li>Discomfort, stale air and/or stuffiness in a room or space</li>
-                                <li>Standing water or condensate in condensate pans</li>
-                                <li>Irrigation system condition and functionality</li>
-                                <li>Signs of refrigerant leakage</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li>Morbi porttitor arcu quis neque vestibulum, sit amet congue dui sagittis. </li>
+                                <li>Sed porttitor, augue quis malesuada vehicula, odio erat commodo libero, eget molestie magna dolor at risus.</li>
+                                <li>Suspendisse viverra sapien mauris, ut efficitur dolor tincidunt id.</li>
+                                <li>Fusce ullamcorper, ipsum eget vulputate vestibulum, justo urna interdum augue, id interdum arcu sem at turpis.</li>
+                                <li>Praesent ex ligula, fermentum vitae dolor in, ultrices posuere nisl.</li>
+                                <li>Donec non efficitur elit, ultrices finibus erat.</li>
+                                <li>tiam fringilla imperdiet elit, a facilisis felis efficitur id.</li>
                             </ul>
                     </Collapse>
                     <br></br>
                     <p className="electrical" onClick={handleElectricalClick}>ELECTRICAL</p>
                     <Collapse isOpened={isElectricalOpened ? true : false}>
-                        <p className="drop-container">To help ensure the safety of students and staff and the protection of facility assets, the electrical assessment involved a walk-thru of the entire site to evaluate the integrity of electrical systems and components to include utility service and switchgear; wiring, conduit and distribution; receptacles and appliances; as well as interior and exterior lighting. The consultant looked for observable deficiencies that included but were not limited to the following:</p>
+                        <p className="drop-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum sit amet elit finibus porta a vitae mauris. Phasellus et risus scelerisque nibh imperdiet varius id et sapien. Fusce vitae sodales mi. Cras in mollis purus. In hac habitasse platea dictumst. Duis pellentesque efficitur velit, ut ullamcorper velit ullamcorper vehicula. Ut sagittis, massa ut tincidunt feugiat, purus arcu hendrerit risus, sit amet rhoncus diam metus scelerisque est. Aliquam cursus turpis sed felis semper, at aliquet nibh posuere. Vestibulum nisl nisi, ultricies eu turpis at, malesuada fringilla purus. Sed sollicitudin posuere libero, eget convallis ligula egestas auctor. Duis nec porttitor:</p>
                             <ul className="drop-container">
-                                <li>Inadequate power supply and/or distribution</li>
-                                <li>Switchboards that are in poor condition, lack space and/or capacity</li>
-                                <li>Improperly mounted, covered or guarded electrical equipment and/or components</li>
-                                <li>Blocked electrical panels</li>
-                                <li>Exposed wiring or frayed cords</li>
-                                <li>Damaged or missing electrical components</li>
-                                <li>Outdated, inefficient and/or non-functional lighting fixtures, systems and/or controls</li>
-                                <li>Poorly functioning and/or outdated low voltage systems and equipment</li>
-                                <li>Damaged or missing light covers or bulbs</li>
-                                <li>Improper use of extension cords or surge protectors</li>
-                                <li>Improperly located appliances</li>
-                                <li>Corrosion of metal system elements exposed to groundwater</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li>Morbi porttitor arcu quis neque vestibulum, sit amet congue dui sagittis. </li>
+                                <li>Sed porttitor, augue quis malesuada vehicula, odio erat commodo libero, eget molestie magna dolor at risus.</li>
+                                <li>Suspendisse viverra sapien mauris, ut efficitur dolor tincidunt id.</li>
+                                <li>Fusce ullamcorper, ipsum eget vulputate vestibulum, justo urna interdum augue, id interdum arcu sem at turpis.</li>
+                                <li>Praesent ex ligula, fermentum vitae dolor in, ultrices posuere nisl.</li>
+                                <li>Donec non efficitur elit, ultrices finibus erat.</li>
+                                <li>tiam fringilla imperdiet elit, a facilisis felis efficitur id.</li>
                             </ul>
                     </Collapse>
                     <br></br>
                     <p className="plumbing" onClick={handlePlumbingClick}>PLUMBING</p>
                     <Collapse isOpened={isPlumbingOpened ? true : false}>
-                        <p className="drop-container">Properly maintained restrooms and drinking fountains contribute to the health of students and staff and also assist in reducing excessive water consumption. The plumbing assessment included a walk-thru of the entire site to observe the integrity of piping, drainage and distribution systems and related components, with any issues noted and prioritized. The consultant looked for observable deficiencies that included but were not limited to the following:</p>
+                        <p className="drop-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum sit amet elit finibus porta a vitae mauris. Phasellus et risus scelerisque nibh imperdiet varius id et sapien. Fusce vitae sodales mi. Cras in mollis purus. In hac habitasse platea dictumst. Duis pellentesque efficitur velit, ut ullamcorper velit ullamcorper vehicula. Ut sagittis, massa ut tincidunt feugiat, purus arcu hendrerit risus, sit amet rhoncus diam metus scelerisque est. Aliquam cursus turpis sed felis semper, at aliquet nibh posuere. Vestibulum nisl nisi, ultricies eu turpis at, malesuada fringilla purus. Sed sollicitudin posuere libero, eget convallis ligula egestas auctor. Duis nec porttitor:</p>
                             <ul className="drop-container">
-                                <li>Outdated, inefficient and/or non-functional fixtures, systems and/or controls</li>
-                                <li>Inaccessible sinks/fountains and other fixtures</li>
-                                <li>Loose/improperly attached, clogged and/or damaged fixtures</li>
-                                <li>Signs of leakage and/or contaminants</li>
-                                <li>Dirty or moldy fixtures</li>
-                                <li>Improper water pressure</li>
-                                <li>Missing restroom partitions and/or stall doors</li>
-                                <li>Inoperable or missing exhaust fans</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li>Morbi porttitor arcu quis neque vestibulum, sit amet congue dui sagittis. </li>
+                                <li>Sed porttitor, augue quis malesuada vehicula, odio erat commodo libero, eget molestie magna dolor at risus.</li>
+                                <li>Suspendisse viverra sapien mauris, ut efficitur dolor tincidunt id.</li>
+                                <li>Fusce ullamcorper, ipsum eget vulputate vestibulum, justo urna interdum augue, id interdum arcu sem at turpis.</li>
+                                <li>Praesent ex ligula, fermentum vitae dolor in, ultrices posuere nisl.</li>
+                                <li>Donec non efficitur elit, ultrices finibus erat.</li>
+                                <li>tiam fringilla imperdiet elit, a facilisis felis efficitur id.</li>
                             </ul>
                     </Collapse>
                     <br></br>     
                     <p className="technology" onClick={handleTechnologyClick}>TECHNOLOGY</p>
                     <Collapse isOpened={isTechnologyOpened ? true : false}>   
-                        <p className="drop-container">The technology assessment included a walk-thru of each site to observe conditions with regard to a variety of systems and infrastructure including network, Internet, classroom, security and audio visual. Any observed deficiencies were noted, compared to best-practice standards and District standards, discussed with the assessment team and with District representatives to review recommendations and priorities. The technology consultants looked for observable deficiencies related to the following:</p>
+                        <p className="drop-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum sit amet elit finibus porta a vitae mauris. Phasellus et risus scelerisque nibh imperdiet varius id et sapien. Fusce vitae sodales mi. Cras in mollis purus. In hac habitasse platea dictumst. Duis pellentesque efficitur velit, ut ullamcorper velit ullamcorper vehicula. Ut sagittis, massa ut tincidunt feugiat, purus arcu hendrerit risus, sit amet rhoncus diam metus scelerisque est. Aliquam cursus turpis sed felis semper, at aliquet nibh posuere. Vestibulum nisl nisi, ultricies eu turpis at, malesuada fringilla purus. Sed sollicitudin posuere libero, eget convallis ligula egestas auctor. Duis nec porttitor:</p>
                             <ul className="drop-container">
-                                <li>Network Systems - data cabling, network switches/routers, phone systems, and wireless network</li>
-                                <li>Classroom Systems - classroom multimedia, telephones, peripherals including document cameras and sound reinforcement</li>
-                                <li>Internet Systems - routers, firewalls, content filtering and internet connections</li>
-                                <li>Data Center - servers, storage, virtualization, backups, disaster recovery and room elements (racks, cooling, power, battery backup, generator, etc.)</li>
-                                <li>Wide Area Network - building-to-building connectivity</li>
-                                <li>Physical Security Systems - video surveillance cameras, access control components, intrusion, campus entrance/exits</li>
-                                <li>Audio Visual Systems - sound systems, bell, clock, public address and board room systems</li>
-                                <li>Student Devices - 1:1, BYOD, computer carts, classroom computers, computer labs</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li>Morbi porttitor arcu quis neque vestibulum, sit amet congue dui sagittis. </li>
+                                <li>Sed porttitor, augue quis malesuada vehicula, odio erat commodo libero, eget molestie magna dolor at risus.</li>
+                                <li>Suspendisse viverra sapien mauris, ut efficitur dolor tincidunt id.</li>
+                                <li>Fusce ullamcorper, ipsum eget vulputate vestibulum, justo urna interdum augue, id interdum arcu sem at turpis.</li>
+                                <li>Praesent ex ligula, fermentum vitae dolor in, ultrices posuere nisl.</li>
+                                <li>Donec non efficitur elit, ultrices finibus erat.</li>
+                                <li>tiam fringilla imperdiet elit, a facilisis felis efficitur id.</li>
                             </ul>
                     </Collapse>
                     <br></br> 
                     <p className="safety" onClick={handleSafetyClick}>SAFETY AND SECURITY</p>
                     <Collapse isOpened={isSafetyOpened ? true : false}>
-                        <p className="drop-container">To assist in providing a safe and secure facility for students and staff as well as the protection of facility assets, a safety audit was conducted as a part of the condition assessment. The scope of the audit included a review of site elements such as fencing, security cameras and intercoms; building elements such as access control, resistive glass, and intrusion detection, as well as processes and operational procedures related to safety and security. The security consultant looked for observable deficiencies with regard to a variety of elements and universally adopted best practice standards to include, but not limited to the following:</p>
+                        <p className="drop-container">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum sit amet elit finibus porta a vitae mauris. Phasellus et risus scelerisque nibh imperdiet varius id et sapien. Fusce vitae sodales mi. Cras in mollis purus. In hac habitasse platea dictumst. Duis pellentesque efficitur velit, ut ullamcorper velit ullamcorper vehicula. Ut sagittis, massa ut tincidunt feugiat, purus arcu hendrerit risus, sit amet rhoncus diam metus scelerisque est. Aliquam cursus turpis sed felis semper, at aliquet nibh posuere. Vestibulum nisl nisi, ultricies eu turpis at, malesuada fringilla purus. Sed sollicitudin posuere libero, eget convallis ligula egestas auctor. Duis nec porttitor:</p>
                             <ul className="drop-container">
-                                <li >Daily, on-site law enforcement</li>
-                                <li >Comprehensive and integrated Emergency Operations Plan and Administrative Practice Manual in place</li>
-                                <li>Ongoing training and drills</li>
-                                <li>Secure vestibules with restrictive access</li>
-                                <li>Adequate security for portable buildings</li>
-                                <li>Card reader access control</li>
-                                <li>Door sensors</li>
-                                <li>Video intercom system</li>
-                                <li>Resistive glass</li>
-                                <li>Intrusion detection</li>
-                                <li>Lock down / panic buttons</li>
-                                <li>Secure pedestrian gates</li>
-                                <li>Fencing</li>
-                                <li>Site and building signage</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                                <li>Morbi porttitor arcu quis neque vestibulum, sit amet congue dui sagittis. </li>
+                                <li>Sed porttitor, augue quis malesuada vehicula, odio erat commodo libero, eget molestie magna dolor at risus.</li>
+                                <li>Suspendisse viverra sapien mauris, ut efficitur dolor tincidunt id.</li>
+                                <li>Fusce ullamcorper, ipsum eget vulputate vestibulum, justo urna interdum augue, id interdum arcu sem at turpis.</li>
+                                <li>Praesent ex ligula, fermentum vitae dolor in, ultrices posuere nisl.</li>
+                                <li>Donec non efficitur elit, ultrices finibus erat.</li>
+                                <li>tiam fringilla imperdiet elit, a facilisis felis efficitur id.</li>
                             </ul>
                     </Collapse>
                     <br></br>
                 </div>
-            </div>
-            <div className="assessments-navlink">
-                <h4><NavLink className="navlinkstyle" to="/assessments">SCHOOL ASSESSMENTS</NavLink></h4>
             </div>
         </div>
         

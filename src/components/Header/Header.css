@@ -10,15 +10,32 @@
     z-index: 2000;
 }
 
-@media only screen and (max-width: 600px) {
-    .logo {
-      display: none;
-    }
+
+
+.logo {
+    height: 100px;
 }
 
 .main-logo-nav-link {
-    display: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+h6 {
+    margin: 0%;
+}
+
+span {
+    text-decoration: none;
+    color: #3d3338;
+}
+
+span:hover {
+    cursor: text;
+}
+
+
 
 .navlink {
     text-decoration: none;
@@ -27,6 +44,7 @@
 
 .navlink:hover {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .active-nav-link {
@@ -47,7 +65,7 @@
     background-color: rgb(204, 202, 202);
     cursor: pointer;
     border-color: #3d3338;
-    color: #7A0230;
+    color: #003f5c;
 }
 
 .school-dropdown {
@@ -59,7 +77,7 @@
     position: absolute;
     min-width: 120px;
     color: #fdfdfb;
-    background-color: #7A0230;
+    background-color: #003f5c;
     font-family: 'Poppins', 'Courier New', Courier, monospace;
     font-size: 1.5rem;
     padding-left: 2%;
@@ -85,4 +103,26 @@
     color: #fdfdfb;
     font-size: 1.2rem;
 }
+
+
+@media only screen and (max-width: 550px) {
+    .header {
+        font-size: 1.3rem;
+        text-align: center;
+        display: block;
+        height: 240px;
+    }
+    .download-button {
+        border-width: 2px;
+        font-size: 1rem;
+    }
+    
+    .navlink {
+        margin-left: 3%;
+    }
+    article {
+        margin-bottom: 2%;
+    }
+}
+
 
